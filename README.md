@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## CARAVAN blog実装
+### ルーティング
+    - resources
+        RESTfulなURL(index〜destroy)を自動で設定してくれる
