@@ -3,6 +3,8 @@ class BlogsController < ApplicationController
   end
 
   def index
+    # 記事を全件取得
+    @blogs = Blog.all
   end
 
   def new
@@ -19,7 +21,7 @@ class BlogsController < ApplicationController
   end
 
   private
-  def blogs_params
+  def blog_params
     params.require(:blog).permit(:title, :category, :body)
   end
 end
